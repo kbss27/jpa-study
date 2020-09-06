@@ -1,5 +1,5 @@
 package hellojpa;
 
 public enum RoleType {
-    STRING, TIMESTAMP
+    USER, ADMIN
 }
