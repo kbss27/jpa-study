@@ -3,6 +3,7 @@ package hellojpa;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.Date;
 
 @Entity
 public class Member {
@@ -10,8 +11,18 @@ public class Member {
     @Id
     private Long id;
 
-    @Column(unique = true, length = 10)
+    @Column(name = "name")
     private String name;
+
+    private Integer age;
+
+    private RoleType roleType;
+
+    private Date createDate;
+
+    private Date lastModifiedDate;
+
+    private String description;
 
     public Long getId() {
         return id;
